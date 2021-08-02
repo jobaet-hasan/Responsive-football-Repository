@@ -1,0 +1,313 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common style  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+     width: 1300px; 
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+/* header style  */
+
+.header-details{
+    width: 1300px; 
+    
+    height: 600px;
+    background-color: #2D25A0;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-info{
+
+display: flex;
+flex-direction: column;
+margin-left: 140px;
+
+}
+.header{
+font-size: 30px;
+margin-top: 70px;
+ color:  #FFFFFF;
+
+}   
+
+.button button{
+    background-color: #E02C6D;
+
+    height: 44px;
+    color: white;
+    width: 168px;
+    font-weight: 500;
+    
+}
+button:hover{
+
+    transform: scale(1.3);
+    border-radius:20px;
+    font-weight: 700;
+}
+ .banner{
+    /* margin-left: 600px;  */
+    margin-top: 60px;
+    /* position: absolute; */
+    margin-right: 144px;
+
+} 
+.banner img{
+
+    width: 556px;
+    height: 438px;
+
+}
+.banner img:hover{
+transform: scale(1.1);
+
+}
+
+
+/* players */
+
+.img img{
+    width: 300px;
+    height: 256px;
+    
+}
+.players{
+    margin-top: 70px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center; 
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 30px;
+    
+
+    
+}
+.player-info{
+    padding: 15px;
+    box-shadow:  15px 15px 15px 15px #ebe0e0;
+    
+}
+.player-details h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.paragraph{
+    
+font-size: 16px;
+font-weight: 400;
+color: #6C6C6C;
+
+
+}
+/* match */
+
+
+.match{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+
+.match-details h1{
+    font-size: 35px;
+}
+.match-info{
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-img img{
+    width: 500px;
+    height: 400px;
+}
+/* copa-sponsor */
+
+.copa-sponsor{
+
+padding: 50px;
+}
+.copa-sponsor img{
+width: 550px;
+height: 90px;
+}
+/* gallery */
+.gallery-section{
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.gallery-section h1{
+    font-size: 40px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img img{
+
+    width: 400px;
+    height: 300px;
+}
+/* footer */
+
+.footer-details{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 60px;
+
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+
+}
+.icons{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.icons i{
+    font-size: 30px;
+   text-align: center;
+   color: #969BAB;
+  font-weight: 500;
+  background-color:lightgray;
+  padding: 8px;
+  border-radius: 50%;
+
+}
+.copyright h4{
+    font-size: 18px;
+    font-weight: normal;
+
+} 
+
+/* media queary */
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+
+    /* header */
+    body{
+        font-family: 'Poppins', sans-serif;
+    
+         /* width: 688px;   */
+        width: 100%;
+         background-color: #FFFFFF;
+        position: relative;
+    }
+
+    .header-details{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        padding-left: 10px;
+    
+        
+    }
+    .banner img{
+
+        width: 350px;
+        height: 259px;
+    }
+    .header-info{
+
+        margin-left: 10px;
+    }
+
+    /* players  */
+.player{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    /* padding-left: 140px; */
+    
+}
+/* match  */
+
+.match{
+    display: flex;
+    flex-direction: column;
+    
+
+    /* display: grid; */
+    /* grid-template-columns: repeat(1,  1fr); */
+    
+    /* padding-left: 10px; */
+}
+.match-info{
+
+        margin-left: 10px;
+
+}
+.match-img img{
+
+    padding: 10px;
+}
+/* gallery  */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+    
+}
+.gallery-img img{
+
+    width: 350px;
+    height: 300px;
+}
+
+    .copa-sponsor img{
+    width: 500px;
+    height: 90px;
+    }
+    .copa-sponsor{
+
+        padding-left: 0px;
+
+        }
+        .logo img{
+            width: 400px;
+            height: 90px;
+        
+        }
+        .footer-details{
+
+            margin-left: 50px;
+        }
+}
